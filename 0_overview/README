@@ -11,6 +11,12 @@ version, emphasizing that what is being tested is due to the hardware-level
 implementation of floating point arithmetic, as opposed to being due to the
 specific programming language. 
 
+calc_pi_double.py - a program that uses Taylor series expansions (e.g. the Gregory
+and Machin series) to approximate pi in standard double precision arithmetic.
+
+calc_pi2.py - a version of calc_pi_double.py that approximates pi to 
+arbitrary precision.
+
 The lectures also discussed paranoia.c, originally written by Prof. William
 Kahan (UC Berkeley), available here:
 
