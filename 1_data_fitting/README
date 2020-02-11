@@ -22,9 +22,6 @@ results directly withing Python
 ch_inter.py - a Python program to perform Lagrange interpolation using Chebyshev
 or linearly-spaced points
 
-lsum.py - program to calculate the sum of absolute values of the Lagrange
-polynomial, needed to evaluate the Lebesgue Constant
-
 spline.py - cubic spline test program, which can also examine the difference
 between two splines with very similar input data
 
@@ -40,10 +37,6 @@ used by lstsq will be discussed later in the course.
 np_lfit.py - program to do linear least squares fitting of a sum of
 exponentials to a given function. This program demonstrates the the linear
 least squares does not just work for polynomials.
-
-under_lfit.py - program demonstrating underconstrained least squares, whereby
-a high-degree polynomial is fitted to a small number of data points by
-imposing additional constraints.
 
 nonlinlsq.py - a nonlinear least squares problem based on finding the position
 of a radio transmitter based on signal received at nearby beacons.

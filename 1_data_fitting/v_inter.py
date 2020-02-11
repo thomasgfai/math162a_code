@@ -3,7 +3,7 @@ from math import *
 import numpy as np
 
 # Initialize x points and function values
-n=5
+n=12
 x=np.linspace(0,3,n)
 y=np.array([exp(-q) for q in x])
 
@@ -12,7 +12,7 @@ V=np.vander(x)
 b=np.linalg.solve(V,y)
 
 # Add optional random perturbation
-#b+=1e-6*np.random.rand(n);
+b+=1e-6*np.random.rand(n);
 
 # Plot interpolant
 xx=0

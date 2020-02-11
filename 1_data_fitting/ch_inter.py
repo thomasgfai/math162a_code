@@ -21,8 +21,8 @@ def lagr(x,xp,yp):
 
 # Control points
 n=16
-xp=np.linspace(-1,1,n) # (Linearly spaced)
-#xp=np.array([cos((2*j+1)*pi/(2*n)) for j in range(n)]) # (Chebyshev points)
+#xp=np.linspace(-1,1,n) # (Linearly spaced)
+xp=np.array([cos((2*j+1)*pi/(2*n)) for j in range(n)]) # (Chebyshev points)
 yp=np.array([f(q) for q in xp])
 
 # Sample points

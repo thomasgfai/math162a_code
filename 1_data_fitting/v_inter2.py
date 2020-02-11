@@ -31,8 +31,9 @@ yy3=np.array([f(q,b)-exp(-q) for q in xx])
 
 # Plot figure using Matplotlib
 plt.figure()
-plt.plot(xx,yy)
-plt.plot(xx,yy2)
+plt.plot(xx,yy,label='interp')
+plt.plot(xx,yy2,label='reference')
 plt.xlabel('x')
 plt.ylabel('y')
+plt.legend()
 plt.show()
