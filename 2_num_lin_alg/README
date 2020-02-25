@@ -15,3 +15,9 @@ optimized library for dense matrix calculations.)
 
 chol_time.py - Measures the time taken by Python's Cholesky factorization
 routine, as a function of the matrix size. 
+
+power_method.py - Demonstrates the shifted power method for extracting
+an eigenvector of a matrix.
+
+qr_example.py - Demonstrates the QR method for finding eigenvalues and
+eigenvectors.
