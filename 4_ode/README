@@ -1,0 +1,14 @@
+Brandeis Math 162a: Code Examples
+Unit 4: Numerical Ordinary Differential Equations
+==========================
+euler.py - Demonstrates the simple first-order forward Euler method for
+integrating an ordinary differential equation. If the program is run with "python euler.py >out" so that the data is sent to a file called "out", then within Gnuplot the results can be shown with the command:
+
+plot 'out' u 1:2 t 'Computed solution', 'out' u 1:3 t 'Exact solution'
+
+The differences between the two can be shown with the command:
+
+plot 'out' u 1:4 t 'Error'
+
+e_stab.py - Tests the stability of the choice of timestep in the forward Euler method
+
