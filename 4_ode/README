@@ -12,3 +12,14 @@ plot 'out' u 1:4 t 'Error'
 
 e_stab.py - Tests the stability of the choice of timestep in the forward Euler method
 
+stiff.py - Solves a two-component differential equation that has one stiff
+mode. It uses an explict scheme and an implicit scheme. The explicit scheme
+has a very strict timestep restriction, while the implicit scheme is
+unconditionally stable.
+
+stiff2.py - Demonstrates using Python's black-box stiff solver for the
+same two-component differential equation from stiff.py.
+
+ad-bash.py - Solves a differential equation using a second-order
+Adams-Bashforth multi-step scheme.
+
