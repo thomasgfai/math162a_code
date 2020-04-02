@@ -34,3 +34,5 @@ derivative of a test function.
 
 ode_bvp.py - Solves an ODE boundary value problem by formulating it as a
 linear system using finite differences.
+
+ode_asymp.py - Compares full numerical solution to asymptotic solutions obtained using dominant balance. 
