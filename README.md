@@ -1,7 +1,6 @@
 Brandeis Math 162a: Code Examples
 =======================================
-Brandeis Math 162a is a graduate course the provides a broad overview of scientific
-computing.
+Brandeis Math 162a is a graduate course the provides a broad overview of scientific computing.
 
 This Git repository contains example codes from the course. The codes are
 primarily written in Python, and make use of several commonly-used libraries
@@ -17,8 +16,10 @@ The course is divided into six units:
 - Unit 0: Overview of Scientific Computing
 - Unit 1: Data Fitting
 - Unit 2: Numerical Linear Algebra
-- Unit 3: Asumptotics
+- Unit 3: Quadrature
 - Unit 4: Numerical Methods for Ordinary Differential Equations
 - Unit 5: Numerical Methods for Partial Differential Equations
+
+In addition there is a separate Python tutorial.
 
 Example codes from each unit are provided in separate directories.
