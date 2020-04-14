@@ -3,6 +3,7 @@ import numpy as np
 from math import *
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
+from matplotlib import cm
 
 # Grid size
 m=64
@@ -17,6 +18,7 @@ z=np.zeros((m,snaps+1))
 alpha=0.1
 dx=1.0/m
 dt=0.501*dx*dx/alpha
+dt=0.05*dx*dx/alpha
 nu=alpha*dt/(dx*dx)
 lam=1
 
@@ -54,7 +56,7 @@ ax=fig.gca(projection='3d')
 print mgt.shape
 print mgx.shape
 print z.shape
-surf=ax.plot_surface(mgt,mgx,z.T,rstride=1,cstride=1,linewidth=0)
+surf=ax.plot_surface(mgt,mgx,z.T,cmap=cm.coolwarm,rstride=1,cstride=1,linewidth=0)
 ax.set_xlabel('x')
 ax.set_ylabel('t')
 ax.set_zlabel('z')

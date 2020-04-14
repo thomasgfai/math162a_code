@@ -3,6 +3,7 @@ import numpy as np
 from math import *
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
+from matplotlib import cm
 
 # Grid size
 m=64
@@ -74,7 +75,7 @@ ax=fig.gca(projection='3d')
 print mgt.shape
 print mgx.shape
 print sola.shape
-surf=ax.plot_surface(mgt,mgx,sola.T,rstride=1,cstride=1,linewidth=0)
+surf=ax.plot_surface(mgt,mgx,sola.T,cmap=cm.coolwarm,rstride=1,cstride=1,linewidth=0)
 ax.set_xlabel('x')
 ax.set_ylabel('t')
 ax.set_zlabel('z')
@@ -84,7 +85,7 @@ ax=fig.gca(projection='3d')
 print mgt.shape
 print mgx.shape
 print solb.shape
-surf=ax.plot_surface(mgt,mgx,solb.T,rstride=1,cstride=1,linewidth=0)
+surf=ax.plot_surface(mgt,mgx,solb.T,cmap=cm.coolwarm,rstride=1,cstride=1,linewidth=0)
 ax.set_xlabel('x')
 ax.set_ylabel('t')
 ax.set_zlabel('z')
