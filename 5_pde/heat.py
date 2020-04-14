@@ -1,6 +1,8 @@
 #!/usr/bin/python
 import numpy as np
 from math import *
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
 
 # Grid size
 m=64
@@ -36,9 +38,24 @@ for i in range(1,snaps+1):
         a=np.copy(b)
     z[:,i]=a
 
-# Output results
-for j in range(m):
-    e=[str(j*dx)]
-    for i in range(snaps+1):
-        e.append(str(z[j,i]))
-    print " ".join(e)
+## Output results
+#for j in range(m):
+#    e=[str(j*dx)]
+#    for i in range(snaps+1):
+#        e.append(str(z[j,i]))
+#    print " ".join(e)
+
+# Plot using Matplotlib
+xa=np.linspace(0,1,m)
+xt=np.linspace(0,dt*snaps*iters,snaps+1)
+mgt,mgx=np.meshgrid(xa,xt);
+fig=plt.figure()
+ax=fig.gca(projection='3d')
+print mgt.shape
+print mgx.shape
+print z.shape
+surf=ax.plot_surface(mgt,mgx,z.T,rstride=1,cstride=1,linewidth=0)
+ax.set_xlabel('x')
+ax.set_ylabel('t')
+ax.set_zlabel('z')
+plt.show()
