@@ -25,5 +25,8 @@ second-order in space and time, and unconditionally stable.
 telegraph.py - Solves the telegraph equation using the method of lines 
 and compares to the limiting exact solution of the heat equation
 
+fsolve.py - Demonstrates Python's "fsolve" routine for finding the nodes and
+weights in the two-point Gauss quadrature scheme.
+
 h_newton.py - Finds critical points of the Himmelblau function using the
 Newton method.
