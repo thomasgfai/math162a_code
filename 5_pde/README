@@ -21,3 +21,5 @@ explicit finite difference scheme.
 
 c-n.py - Solves the heat equation using the Crank-Nicolson method, which is
 second-order in space and time, and unconditionally stable.
+
+telegraph.py - Solves the telegraph equation using the method of lines and compares to the limiting exact solution of the heat equation
