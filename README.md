@@ -1,6 +1,6 @@
 Brandeis Math 162a: Code Examples
 =======================================
-Brandeis Math 162a is a graduate course the provides a broad overview of scientific computing.
+Brandeis Math 162a is a graduate course that provides a broad overview of scientific computing.
 
 This Git repository contains example codes from the course. The codes are
 primarily written in Python, and make use of several commonly-used libraries
