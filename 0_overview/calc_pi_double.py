@@ -33,7 +33,7 @@ for i in range(0,n_iter):
   sum = sum+np.math.factorial(4*i)/(4.0**i*np.math.factorial(i))**4*(1103.0+26390.0*i)/99.0**(4.0*i)
   pi_ramanujan.append(1.0/(2.0*np.sqrt(2)/9801*sum))
 
-print pi_ramanujan
+print(pi_ramanujan)
 error_arctan = [x-np.pi for x in pi_arctan]
 plt.semilogy(error_arctan,'r.',label='simple arctan')
 error_gregory = [x-np.pi for x in pi_gregory]

@@ -3,18 +3,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib
-matplotlib.rcParams['text.usetex'] = True
-params = {
-              'axes.labelsize': 12, # fontsize for x and y labels (was 10)
-              'axes.titlesize': 12,
-              'legend.fontsize': 12, # was 10
-              'xtick.labelsize': 12,
-              'ytick.labelsize': 12,
-              'text.usetex': True,
-              'font.family': 'serif'
-    }
 
-matplotlib.rcParams.update(params)
+import matplotlib as mpl
+mpl.rcParams.update(mpl.rcParamsDefault)
 
 #Here we get Python's pi calculation to 30 digits
 try:
