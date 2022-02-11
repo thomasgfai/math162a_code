@@ -22,7 +22,7 @@ y=np.cos(4*x)*np.exp(-x)
 
 # Solve using the least-squares function
 b=np.linalg.lstsq(A,y)[0]
-print "Norm(r)/Norm(b) :",np.linalg.norm(y-np.dot(A,b))/np.linalg.norm(b)
+print("Norm(r)/Norm(b) :",np.linalg.norm(y-np.dot(A,b))/np.linalg.norm(b))
 
 # Plot results
 xnew=np.linspace(-1,1,200)
