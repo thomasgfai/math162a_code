@@ -15,7 +15,9 @@ tnew=np.linspace(0,5,200)
 plt.plot(t,x,'o',tnew,f(tnew),'-',t,x2,'o',tnew,f2(tnew),'--')
 plt.legend(['data','cubic','data2','cubic2'],loc='best')
 
+plt.show()
+
 # Optional plot of the difference
-#plt.plot(tnew,f(tnew)-f2(tnew),'-')
+plt.plot(tnew,f(tnew)-f2(tnew),'-')
 
 plt.show()
